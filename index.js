@@ -169,9 +169,9 @@ function PeopleAccessory(log, config, platform) {
 
 PeopleAccessory.encodeState = function(state) {
     if (state) {
-        return Characteristic.ContactSensorState.CONTACT_DETECTED;
-    } else {
         return Characteristic.ContactSensorState.CONTACT_NOT_DETECTED;
+    } else {
+        return Characteristic.ContactSensorState.CONTACT_DETECTED;
     }
 }
 
